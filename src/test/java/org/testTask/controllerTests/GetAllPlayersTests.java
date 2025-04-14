@@ -1,4 +1,4 @@
-package org.testTask.controllersTests;
+package org.testTask.controllerTests;
 
 import io.qameta.allure.Description;
 import org.apache.http.HttpStatus;

@@ -1,4 +1,4 @@
-package org.testTask.controllersTests;
+package org.testTask.controllerTests;
 
 import io.qameta.allure.Description;
 import org.apache.http.HttpStatus;
@@ -6,6 +6,7 @@ import org.testTask.BaseTest;
 import org.testTask.DTO.CreatePlayerRequestDTO;
 import org.testTask.DTO.CreatePlayerResponseDTO;
 import org.testTask.DTO.GetPlayerByIdResponseDTO;
+import org.testTask.ENUM.ROLE;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -19,9 +20,9 @@ public class GetPlayerByIdTests extends BaseTest {
 
     @BeforeClass(alwaysRun = true)
     public void setup() {
-        playerForCreationDto = CreatePlayerData.getDefaultCreateDto("ForGetById");
+        playerForCreationDto = CreatePlayerData.getDefaultCreateDto("ForGetById", ROLE.USER);
         var playerParams = CreatePlayerData.getDefaultCreateParams(playerForCreationDto);
-        playerForTestsDto = creationSteps.createPlayer(playerParams);
+        playerForTestsDto = creationSteps.createPlayer(playerParams,supervisorLogin);
     }
 
     @Description("Verify that /player/get returns correct result")

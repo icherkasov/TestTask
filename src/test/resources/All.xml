@@ -2,11 +2,11 @@
 <suite name="FullRun">
     <test name="ControllersTests">
         <classes>
-            <class name="org.testTask.controllersTests.CreatePlayerTests"/>
-            <class name="org.testTask.controllersTests.GetPlayerByIdTests"/>
-            <class name="org.testTask.controllersTests.GetAllPlayersTests"/>
-            <class name="org.testTask.controllersTests.UpdatePlayerTests"/>
-            <class name="org.testTask.controllersTests.DeletePlayerTests"/>
+            <class name="org.testTask.controllerTests.CreatePlayerTests"/>
+            <class name="org.testTask.controllerTests.GetPlayerByIdTests"/>
+            <class name="org.testTask.controllerTests.GetAllPlayersTests"/>
+            <class name="org.testTask.controllerTests.UpdatePlayerTests"/>
+            <class name="org.testTask.controllerTests.DeletePlayerTests"/>
         </classes>
     </test>
 </suite>
